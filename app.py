@@ -9,5 +9,9 @@ input_num = st.number_input('Input a number', value=0)
 result = input_num ** 2
 st.write('Result: ', result)
 
-st.line_chart(df.filter(items=[' _amp ']))
+
 st.scatter_chart(df, x=" _temp_A ", y=" _diff ")
+st.scatter_chart(df, x=' _time ', y=" _temp_A ")
+st.scatter_chart(df, x=" _time ", y=" _diff ")
+# Index(['_sqrt_TW_freq ', ' _amp ', ' _theta ', ' _DCV ', ' _time ',
+#        ' _sensor_temp ', ' _diff ', ' _tesla ', ' _temp_A ', ' _temp_B ', ' '],
