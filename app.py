@@ -5,10 +5,6 @@ url = "https://raw.githubusercontent.com/kmgk/realtime-plotting/refs/heads/main/
 df = pd.read_csv(url, sep='\t')
 st.title('リアルタイムプロット')
 
-result = input_num ** 2
-st.write('Result: ', result)
-
-
 st.scatter_chart(df, x=" _temp_A ", y=" _diff ")
 st.scatter_chart(df, x=' _time ', y=" _temp_A ")
 st.scatter_chart(df, x=" _time ", y=" _diff ")
